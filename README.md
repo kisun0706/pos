@@ -5,20 +5,20 @@
 ## 핵심 기능
 
 ```java
-          String price=totalPriceArea.getText();
-					int discountPrice=(int) (Integer.parseInt(price)*0.95);
-					//영수증 띄우기 전에 회원인지 아닌지 확인하고 회원이면 총가격에서 5% 할인
-					String check=JOptionPane.showInputDialog(new CafeFrame(), "이름: ");
-					dao=MemberDao.getInstance();
-					vo=dao.selectMember(check);
-					if(null==vo.getName()) {
-						JOptionPane.showMessageDialog(new CafeFrame(), "총 "+price+"원 입니다.\n"+time);	
-						sales+=Integer.parseInt(price);//할인 미적용 가격을 매출에 등록
-					}
-					else {
-						JOptionPane.showMessageDialog(new CafeFrame(), "회원이므로 총 "+discountPrice+"원 입니다.\n"+time);	
-						sales+=discountPrice;//할인된 가격을 매출에 등록
-					}
+String price=totalPriceArea.getText();
+int discountPrice=(int) (Integer.parseInt(price)*0.95);
+//영수증 띄우기 전에 회원인지 아닌지 확인하고 회원이면 총가격에서 5% 할인
+String check=JOptionPane.showInputDialog(new CafeFrame(), "이름: ");
+dao=MemberDao.getInstance();
+vo=dao.selectMember(check);
+if(null==vo.getName()) {
+JOptionPane.showMessageDialog(new CafeFrame(), "총 "+price+"원 입니다.\n"+time);	
+sales+=Integer.parseInt(price);//할인 미적용 가격을 매출에 등록
+}
+else {
+JOptionPane.showMessageDialog(new CafeFrame(), "회원이므로 총 "+discountPrice+"원 입니다.\n"+time);	
+sales+=discountPrice;//할인된 가격을 매출에 등록
+}
 			
 ```mysql
 				select*from member;
