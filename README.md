@@ -40,4 +40,3 @@ sales+=discountPrice;//할인된 가격을 매출에 등록
 [![Watch the video](https://img.youtube.com/vi/동영상id/hqdefault.jpg)](https://www.youtube.com/watch?v=REL0pt4SZl0)
 
 ## javadoc
-pos/MiniCafePos/doc/index.html
