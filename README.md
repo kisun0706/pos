@@ -35,3 +35,6 @@ sales+=discountPrice;//할인된 가격을 매출에 등록
 -jtable의 활용은 처음이라 그 기능들을 써먹는 데 시간이 소요됐다.   
 -원래 같은 메뉴를 여러 번 눌렀을 때 jtable의 row가 계속 나열되는 것이 아니라 해당 메뉴의 수량만 늘어나게 하려고 했는데, 그것을 구현하지 못했다.   
 -원래 결제 버튼을 누르면 메뉴 이름, 가격, 수량을 모두 joptionpane으로 출력하려고 했으나, jtable의 모든 데이터를 출력하는 방법을 찾지 못하여 총 가격만 출력하였다.
+
+## 유튜브
+[![Watch the video](https://img.youtube.com/vi/동영상id/hqdefault.jpg)](https://www.youtube.com/watch?v=REL0pt4SZl0)
